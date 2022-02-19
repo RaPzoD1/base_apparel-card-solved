@@ -30,12 +30,16 @@ Users should be able to:
 
 #### Desktop
 
+![image](https://user-images.githubusercontent.com/25336634/154783346-7e22ea26-94d5-4616-b7ac-0624039ef8bf.png)
+
 #### Mobile
+
+![image](https://user-images.githubusercontent.com/25336634/154783359-8ec59a66-6a47-4622-877f-197e21870bc0.png)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/RaPzoD1/base_apparel-card-solved)
+- Live Site URL: [Netlify](https://modest-davinci-839049.netlify.app/)
 
 ## My process
 
