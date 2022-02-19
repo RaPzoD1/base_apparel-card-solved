@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+    --desaturated-red-color: hsl(0, 36%, 70%);
+    --sof-red-color: hsl(0, 93%, 68%);
+    --dark-grayish-red-color: hsl(0, 6%, 24%);
+    --font-family-josefin-sans: 'Josefin Sans', sans-serif;
+    --font-size: 16px;
+    --gradient-white-color: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    --gradient-red-color: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-josefin-sans);
+    font-size: var(--font-size);
+    color: var(--desaturated-red-color);
+    font-weight: 300;
+    background: rgba(211, 211, 211, 0.096);
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apparel-card {
+    width: 375px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--gradient-white-color);
+}
+.logo {
+    margin: 25px 0 0 25px;
+}
+.logo img {
+    width: 100px; 
+}
+.hero-image {
+    width: 375px;
+    height: 255px;
+    margin-top: 20px;
+    background: url(./images/hero-mobile.jpg) no-repeat center center;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.card-detaills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card-detaills h1 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.card-detaills b {
+    color: black;
+}
+
+.input-email {
+    width:100%;
+    margin: 20px 0 -11px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-email input {
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid lightgray;
+    border-radius: 25px;
+    background: transparent;
+    text-indent: 10px;
+}
+.input-email input:focus {
+    outline: none;
+    border: 1px solid var(--sof-red-color);
+}
+::placeholder {
+    color: hsla(0, 36%, 70%, 0.384);
+    font-family: var(--font-family-josefin-sans);
+    font-weight: 400;
+    padding-left: 20px;
+}
+.icon-error {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    left: 220px;
+    display: none;
+}
+
+.input-email button {
+    width: 65px;
+    height: 44px;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    background: var(--gradient-red-color);
+    z-index: 2;
+    top: 0;
+    left: 254px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+.input-email button img {
+    width: 8px;
+    height: 16px;
+}
+.input-email button:hover {
+    cursor: pointer;
+    transform: scaleX(1.25);
+    background: hsl(0, 80%, 86%);
+}
+.error-text p {
+    display: none;
+    color: var(--sof-red-color);
+    margin: 16px 0 0 -114px;
+    font-size: 12px;
+}
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media screen and (min-width:800px) {
+    .apparel-card {
+        width: 850px;    
+        display: grid;
+        grid-template-areas: "logo hero" "details hero" "details hero" "details hero";
+        
+    }
+    .logo {
+        grid-area: logo;
+        margin: 35px 0 0 92px;
+    }
+    .hero-image {
+        width: 347px;
+        height: 100%;
+        grid-area: hero;
+        background: url(./images/hero-desktop.jpg) no-repeat center center;
+        background-size: cover;
+        margin: 0;     
+    }    
+    .card-detaills {
+        grid-area: details;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 92px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .card-detaills h1 {
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        margin: 50px 0 0 0;
+    }
+  }
